@@ -1,0 +1,214 @@
+/* Event Details Page Styles */
+
+/* Back Link */
+.back-link {
+    margin-bottom: 20px;
+}
+
+.back-link a {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: #1E3A8A;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
+}
+
+/* Event Details Container */
+.event-details-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+/* Status Banner */
+.event-status-banner {
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.status-completed {
+    background-color: #28a745; /* Green */
+}
+
+.status-pending {
+    background-color: #ffc107; /* Orange/Yellow */
+}
+
+.status-not_submitted {
+    background-color: #dc3545; /* Red */
+}
+
+.status-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Event Info Card */
+.event-info-card {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.event-info-card h2 {
+    margin-top: 0;
+    color: #1E3A8A;
+}
+
+.event-meta {
+    display: flex;
+    gap: 20px;
+    margin: 15px 0;
+    color: #666;
+}
+
+.event-date, .event-time {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.event-description {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+/* Admin Announcement */
+.event-announcement {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    border-left: 4px solid #1E3A8A;
+}
+
+.event-announcement h3 {
+    margin-top: 0;
+    color: #1E3A8A;
+    font-size: 1.1rem;
+}
+
+.announcement-content {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.announcement-date {
+    font-size: 0.85rem;
+    color: #666;
+    text-align: right;
+    font-style: italic;
+}
+
+/* Activity Details Card */
+.activity-details-card, .activity-submission-card {
+    padding: 20px;
+}
+
+.activity-details-card h3, .activity-submission-card h3 {
+    margin-top: 0;
+    color: #1E3A8A;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.activity-detail-item {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.detail-value {
+    color: #333;
+}
+
+.activity-status-approved, .activity-status-pending {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.activity-status-approved {
+    background-color: rgba(40, 167, 69, 0.1);
+    color: #28a745;
+}
+
+.activity-status-pending {
+    background-color: rgba(255, 193, 7, 0.1);
+    color: #ffc107;
+}
+
+/* Activity Submission Form */
+.activity-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    font-weight: 500;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.form-group small {
+    color: #666;
+    font-size: 0.85rem;
+}
+
+.form-actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .event-meta {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .activity-detail-item {
+        flex-direction: column;
+    }
+    
+    .detail-label {
+        margin-bottom: 5px;
+    }
+}

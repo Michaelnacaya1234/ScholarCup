@@ -1,0 +1,179 @@
+/* Custom CSS for Staff Students Scholar Status page */
+
+/* Main title styling */
+.header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Search and filter container */
+.filters-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 250px;
+}
+
+.search-container button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.filter-container select {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+/* Table styling */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.data-table th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    font-size: 12px;
+}
+
+.data-table td {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 14px;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Status styling */
+.complied {
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+}
+
+.not_comply {
+    background-color: #fff;
+    color: #ff0000;
+    text-align: center;
+    font-weight: bold;
+}
+
+.pending {
+    background-color: #fff;
+    color: #FFA500; /* Orange color for pending status */
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Academic status styling */
+.evaluated {
+    background-color: #00cc66;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.not_evaluate_yet {
+    background-color: #ff0000;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* Renewal status styling */
+.renewed {
+    background-color: #00cc66;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.not_renew_yet {
+    background-color: #ff0000;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* Action buttons */
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 2px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-edit {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+.btn-edit:hover {
+    background-color: #ec971f;
+}
+
+/* Pagination styling */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination-btn {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.pagination-btn.active {
+    background-color: #1E3A8A;
+    color: white;
+    border-color: #1E3A8A;
+}
+
+.pagination-btn:hover:not(.active) {
+    background-color: #f5f5f5;
+}
