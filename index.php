@@ -430,11 +430,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             box-shadow: 0 0 20px rgba(0, 102, 204, 0.5);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             margin-bottom: 1rem;
+            animation: glowing 3s infinite alternate;
+        }
+        
+        @keyframes glowing {
+            0% {
+                box-shadow: 0 0 10px rgba(0, 102, 204, 0.5), 0 0 20px rgba(0, 102, 204, 0.5);
+            }
+            100% {
+                box-shadow: 0 0 20px rgba(0, 102, 204, 0.8), 0 0 40px rgba(0, 102, 204, 0.8), 0 0 60px rgba(0, 102, 204, 0.5);
+            }
         }
         
         .footer-img:hover {
             transform: scale(1.05);
-            box-shadow: 0 0 25px rgba(0, 102, 204, 0.8);
+            box-shadow: 0 0 25px rgba(0, 102, 204, 0.8), 0 0 50px rgba(0, 102, 204, 0.6);
+            animation: none;
         }
         
         .footer-logo h3 {
