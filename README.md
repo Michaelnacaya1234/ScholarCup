@@ -14,7 +14,7 @@ A comprehensive system for managing scholarship students, staff, and administrat
 ### Option 2: Using MySQL Command Line
 1. Open your terminal or command prompt
 2. Run the following command:
-   ```
+   ``` 
    mysql -u username -p < database.sql
    ```
    Replace `username` with your MySQL username
