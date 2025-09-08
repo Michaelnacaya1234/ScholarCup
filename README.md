@@ -10,7 +10,7 @@ A comprehensive system for managing scholarship students, staff, and administrat
 3. Click "Choose File" and select the `database.sql` file
 4. Click "Go" to import the database structure
 5. The script will automatically create a database named `scholar_db`
-
+  
 ### Option 2: Using MySQL Command Line
 1. Open your terminal or command prompt
 2. Run the following command:
